@@ -5,7 +5,7 @@
 </ul>
 <h2 id="版本库-repository"><a href="#版本库-repository" class="headerlink" title="版本库 repository"></a>版本库 repository</h2><p>一个仓库，只能跟踪文本文件的改动。</p>
 <h2 id="git-init"><a href="#git-init" class="headerlink" title="git init"></a>git init</h2><p>将当前目录变成Git可以管理的仓库，该目录下将多一个.git的目录，用来跟踪管理版本库。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config —global user.email “ur@email.com”</span><br><span class="line">git config —global user.name “ur name”</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git<span class="built_in"> config </span>—global user.email “ur@email.com”</span><br><span class="line">git<span class="built_in"> config </span>—global user.name “ur name”</span><br></pre></td></tr></table></figure>
 
 <p>首次需要绑定你的邮箱和你的用户名。</p>
 <h2 id="git-add-lt-文件名-gt"><a href="#git-add-lt-文件名-gt" class="headerlink" title="git add &lt;文件名&gt;"></a>git add &lt;文件名&gt;</h2><ul>
@@ -16,7 +16,7 @@
 <h2 id="git-status"><a href="#git-status" class="headerlink" title="git status"></a>git status</h2><p>显示仓库的状态。</p>
 <h2 id="git-log"><a href="#git-log" class="headerlink" title="git log"></a>git log</h2><p>查看提交到仓库里的历史记录/日志。<br><code>git log —pretty=oneline</code> 简洁版</p>
 <h2 id="git-reflog"><a href="#git-reflog" class="headerlink" title="git reflog"></a>git reflog</h2><p>记录你的每一次命令，可找回你已经删除的版本号（commit id）</p>
-<h2 id="工作区、暂存区、版本库"><a href="#工作区、暂存区、版本库" class="headerlink" title="工作区、暂存区、版本库"></a>工作区、暂存区、版本库</h2><p><img src="/home/xuyichen/%E4%B8%8B%E8%BD%BD/15645691553019.jpg" alt></p>
+<h2 id="工作区、暂存区、版本库"><a href="#工作区、暂存区、版本库" class="headerlink" title="工作区、暂存区、版本库"></a>工作区、暂存区、版本库</h2><p><img src="/home/xuyichen/%E4%B8%8B%E8%BD%BD/gitzone.jpeg" alt="gitzone"></p>
 <h3 id="撤销："><a href="#撤销：" class="headerlink" title="撤销："></a>撤销：</h3><ul>
 <li>工作区：<code>git checkout —&lt;文件名&gt;</code></li>
 <li>暂存区：<code>git reset HEAD &lt;文件名&gt;</code></li>
