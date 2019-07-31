@@ -905,7 +905,7 @@ a.symbol:hover {
 }
 #TableOfContents a code{
   font-family: Menlo, Monaco, Courier;
-  background-color: #fff;
+  background-color: #e9e7ef;
   font-size: 11px;
   padding: 2px 3px;
   font-weight: 100;
