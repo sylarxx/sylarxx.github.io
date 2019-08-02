@@ -1,0 +1,91 @@
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1"><title>SQL-HUB</title><link rel="shortcut icon" href="/images/avatar.png"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.2.0/styles/github.min.css"><script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script></head><body><nav class="main-nav"><a href="/">Home</a><a href="/archives">Archives</a></nav><div class="profile"><section id="wrapper"><header id="header"><a href="https://github.com/sylarxx"><img class="2x" id="avatar" src="/images/avatar.png"></a><h1>Hi Honey~</h1><h2></h2></header></section></div><section class="post" id="wrapper"><article><header><h1>SQL-HUB</h1><h2 class="headline">Aug 02, 2019 8:31·350 words
+·1 minutes read<span class="tags"></span></h2></header><div id="toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#SQL"><span class="toc-text">SQL</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#SQL语法规则"><span class="toc-text">SQL语法规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SQL语法使用"><span class="toc-text">SQL语法使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#SQL-SELECT（选择）"><span class="toc-text">SQL SELECT（选择）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SQL-SELECT-DISTINCT（去重）"><span class="toc-text">SQL SELECT DISTINCT（去重）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SQL-WHERE（条件筛选）"><span class="toc-text">SQL WHERE（条件筛选）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SQL-AND、OR-、NOT（与、或、非）"><span class="toc-text">SQL AND、OR 、NOT（与、或、非）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SQL-ORDER-BY-（排序）"><span class="toc-text">SQL ORDER BY （排序）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SQL-INSERT-INTO-（插入）"><span class="toc-text">SQL INSERT INTO （插入）</span></a></li></ol></li></ol></li></ol></div><section id="post-body"><h1 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h1><ul>
+<li><p>SQL-Structured Query Language 结构化查询语言。</p>
+</li>
+<li><p>是关系数据库系统（RDBMS-Relationship Database Management System）的标准语言。</p>
+</li>
+</ul>
+<p>​        </p>
+<h2 id="SQL语法规则"><a href="#SQL语法规则" class="headerlink" title="SQL语法规则"></a>SQL语法规则</h2><ul>
+<li>SQL语句以分号结尾。</li>
+<li>SQL不区分大小写。</li>
+</ul>
+<p>​         </p>
+<h2 id="SQL语法使用"><a href="#SQL语法使用" class="headerlink" title="SQL语法使用"></a>SQL语法使用</h2><h3 id="SQL-SELECT（选择）"><a href="#SQL-SELECT（选择）" class="headerlink" title="SQL SELECT（选择）"></a>SQL SELECT（选择）</h3><ul>
+<li><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1,column2,...</span><br><span class="line"><span class="keyword">FROM</span> table_name;</span><br></pre></td></tr></table></figure>
+
+<p>SELECT从数据库表中选择数据，返回的数据存储于结果表中，称为结果集。</p>
+</li>
+</ul>
+<p>​       </p>
+<ul>
+<li><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> table_name;</span><br></pre></td></tr></table></figure>
+
+<p>选择表中的所有字段。</p>
+</li>
+</ul>
+<p>​          </p>
+<h3 id="SQL-SELECT-DISTINCT（去重）"><a href="#SQL-SELECT-DISTINCT（去重）" class="headerlink" title="SQL SELECT DISTINCT（去重）"></a>SQL SELECT DISTINCT（去重）</h3><ul>
+<li><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> column1,column2,...</span><br><span class="line"><span class="keyword">FROM</span> table_name;</span><br></pre></td></tr></table></figure>
+
+<p>返回的结果集筛选掉了相同的值。</p>
+<p>​      </p>
+</li>
+</ul>
+<h3 id="SQL-WHERE（条件筛选）"><a href="#SQL-WHERE（条件筛选）" class="headerlink" title="SQL WHERE（条件筛选）"></a>SQL WHERE（条件筛选）</h3><ul>
+<li><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1,column2,...</span><br><span class="line"><span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">WHERE</span> condition;</span><br></pre></td></tr></table></figure>
+
+<p>通过条件筛选来查询满足条件的数据。（字符串需要‘ ’）</p>
+<p>​     </p>
+</li>
+</ul>
+<h3 id="SQL-AND、OR-、NOT（与、或、非）"><a href="#SQL-AND、OR-、NOT（与、或、非）" class="headerlink" title="SQL AND、OR 、NOT（与、或、非）"></a>SQL AND、OR 、NOT（与、或、非）</h3><ul>
+<li><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1,column2,...</span><br><span class="line"><span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">WHERE</span> condition1 <span class="keyword">AND</span> condition2 <span class="keyword">AND</span> condition3 ...;</span><br></pre></td></tr></table></figure>
+
+<p>满足所有条件。</p>
+<p>​      </p>
+</li>
+<li><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1,column2,...</span><br><span class="line"><span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">WHERE</span> condition1 <span class="keyword">OR</span> condition2 <span class="keyword">OR</span> condition3 ...;</span><br></pre></td></tr></table></figure>
+
+<p>满足其中的一个条件。</p>
+<p>​     </p>
+</li>
+<li><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1,column2,...</span><br><span class="line"><span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">NOT</span> condition;</span><br></pre></td></tr></table></figure>
+
+<p>非此条件的数据。</p>
+</li>
+</ul>
+<p>​       </p>
+<ul>
+<li><p>可结合使用。</p>
+<p>​     </p>
+</li>
+</ul>
+<h3 id="SQL-ORDER-BY-（排序）"><a href="#SQL-ORDER-BY-（排序）" class="headerlink" title="SQL ORDER BY （排序）"></a>SQL ORDER BY （排序）</h3><ul>
+<li><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1,column2,...</span><br><span class="line"><span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> column1 <span class="keyword">ASC</span>,column2 <span class="keyword">DESC</span> ...;</span><br></pre></td></tr></table></figure>
+
+<p>对数据进行排列：ASC升序/DESC降序。</p>
+<p>​       </p>
+</li>
+</ul>
+<h3 id="SQL-INSERT-INTO-（插入）"><a href="#SQL-INSERT-INTO-（插入）" class="headerlink" title="SQL INSERT INTO （插入）"></a>SQL INSERT INTO （插入）</h3><ol>
+<li><p>为表中指定的列插入数据：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> table_name (column1,column2,...)</span><br><span class="line"><span class="keyword">VALUES</span> (value1,value2,...)</span><br></pre></td></tr></table></figure>
+
+<p>​    </p>
+</li>
+<li><p>为表中所有列添加值，需要值的顺序与列顺序一致：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> table_name</span><br><span class="line"><span class="keyword">VALUES</span> (value1,value2,...)</span><br></pre></td></tr></table></figure>
+
+<p>​    </p>
+</li>
+<li><p>用另一张表来插入数据，需要两张表的字段一致：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> table_name1</span><br><span class="line"><span class="keyword">SELECT</span> column1, column2,...</span><br><span class="line"><span class="keyword">FROM</span> table_name2</span><br></pre></td></tr></table></figure>
+
+<p>​        </p>
+</li>
+</ol>
+<ul>
+<li>每次添加一条数据，表的行末会自动递增一个id序列号。</li>
+</ul>
+</section><nav id="post-nav"><span class="prev"></span><span class="next"><a href="/2019/07/31/Git-HUB/">Older Posts<span class="arrow">→</span></a></span></nav></article></section><footer id="footer"><div id="social"><a class="symbol" href="https://github.com/sylarxx"><i class="fa fa-github"></i></a></div><p class="small">© Copyright 2019 &nbsp;<i class="fa fa-heart" aria-hidden="true">&nbsp;xyc</i></p><p class="small">Powered by &nbsp;<a href="https://hexo.io/">Hexo &nbsp;</a>Theme By &nbsp;<a href="https://github.com/sylarxx">xyc</a></p></footer><script>hljs.initHighlightingOnLoad();</script></body></html>
